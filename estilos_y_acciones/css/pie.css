@@ -1,0 +1,56 @@
+.pie_pagina{
+    background-color: var(--color_pie);
+    padding-top: 70px;
+}
+
+.informacion_extra{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.informacion_extra ul li{
+    list-style: none;
+    color: rgba(255,255,255,0.7);
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.bloq_1 ul{
+    width: 90%;
+    margin-top: 10px;
+}
+
+.informacion_extra ul .enlace_pie{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 200;
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+}
+
+.informacion_extra ul .enlace_pie:hover{
+    text-decoration: underline;
+    color: rgba(255,255,255,1);
+}
+
+
+.titulo_pie{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.desarrollador{
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    padding: 50px;
+
+    position: relative;
+}
+
+.logo_footer{
+    width: 120px;
+}

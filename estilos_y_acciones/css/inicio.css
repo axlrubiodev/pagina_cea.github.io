@@ -1,0 +1,115 @@
+.banner_web{
+    height: 600px;
+    display: grid;
+}
+
+.banner_web .wrap{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.imagen_banner, .informacion_banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen_banner .estudiante{
+    width: 100%;
+    /* animation: movimiento 10s linear infinite; */
+}
+
+/* @keyframes movimiento{
+    0%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+} */
+
+.titulo_banner{
+    font-size: 42px;
+    text-align: center;
+    color: var(--color_fuente_titulos);
+    font-weight: 900;
+}
+
+.parrafo_banner{
+    width: 80%;
+    font-size: 18px;
+    text-align: center;
+    padding: 30px 0px;
+    color: var(--color_parrafo_banner);
+}
+
+.boton_explora{
+    text-align: center;
+    display: block;
+    width: 100px;
+    background-color: var(--color_boton_accion);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+}
+
+.boton_explora:hover{
+    background-color: var(--color_boton_accion_hover);
+}
+
+
+
+
+
+
+/*------------------------------ Servicios ------------------------------*/
+.servicios{
+    background-color: var(--color_fondo_bloque);
+    border-top: 1px solid var(--color_linea_bloque);
+    border-bottom: 1px solid var(--color_linea_bloque);
+    padding: 50px 0px;
+}
+
+.titulos_bloques{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: var(--color_fuente_titulos);
+}
+
+
+.contenedor_servicios{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.servicio{
+    border-radius: 5px;
+}
+
+.servicio_icono{
+    width: 50px;
+    display: block;
+    margin: 20px auto;
+}
+
+.subtitulo_servicio{
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--color_fuente_titulos);
+}
+
+.descripcion_servicio{
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--color_parrafo_banner);
+}

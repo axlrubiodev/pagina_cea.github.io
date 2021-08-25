@@ -1,0 +1,197 @@
+body{
+    background-color: #FBFBFE;
+}
+
+.filtro_cursos{
+    padding: 40px 0px;
+}
+
+.filtro_cursos form{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.bloques_filtro{
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.filtros{
+    border: 1px solid var(--color_linea_bloque);
+    color: var(--color_parrafo_banner);
+}
+
+
+.boton_filtro{
+    border-radius: 50px;
+    color: white;
+    background-color: var(--color_boton_accion);
+    border: none;
+    cursor: pointer;
+}
+
+.boton_filtro:hover{
+    background-color: var(--color_boton_accion_hover);
+}
+
+
+
+
+
+/*----------------- Contenedor de cursos -----------------*/
+
+.contenedor_cursos{
+    padding: 20px;
+}
+
+.contenedor_cursos .wrap_bloques{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+}
+
+    /*--------------- Tarjetas de cursos ---------------*/
+    .curso{
+        box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: white;
+    }
+
+        /*-------------- Imagen del curso --------------*/
+        .curso .contenedor_curso_imagen{
+            display: flex;
+        }
+
+        .curso .contenedor_curso_imagen .imagen_curso{
+            width: 100%;
+        }
+
+
+        /*----------- Informacion del curso -----------*/
+        .contenedor_informacion_curso{
+            padding: 15px;
+        }
+
+        .contenedor_enlace_curso{
+            display: block;
+            text-decoration: none;
+            color: var(--color_fuente_titulos);
+        }
+
+        .contenedor_enlace_curso:hover{
+            text-decoration: underline;
+        }
+
+        .contenedor_enlace_curso h4{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+            /* Profesor */
+            .contenedor_profesor{
+                display: flex;
+                align-items: center;
+                padding: 5px 0px;
+            }
+
+            .imagen_profesor{
+                width: 30px;
+                border-radius: 50%;
+                display: block;
+            }
+
+            .nombre_profesor{
+                font-size: 12px;
+                font-weight: 600;
+                margin-left: 10px;
+                color: var(--color_fuente_titulos);
+            }
+
+
+            /*Descripcion de curso*/
+            .contenedor_descripcion_curso .descripcion_curso{
+                font-size: 15px;
+                margin-top: 10px;
+                margin-bottom: 14px;
+                color: var(--color_parrafo_curso);
+            }
+
+            .lanzamiento_curso{
+                font-size: 12px;
+                font-weight: 600;
+                margin: 8px 0px;
+                color: var(--color_fuente_titulos);
+            }
+
+
+            /*Estado del curso*/
+            .contenedor_estado_curso{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .contenedor_compra{
+                display: flex;
+                align-items: center;
+            }
+
+            .icono_compra{
+                width: 18px;
+            }
+
+            .estado_precio{
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--compra);
+                margin-left: 10px;
+            }
+
+            .agregar_carrito{
+                text-decoration: none;
+                display: block;
+                font-size: 14px;
+                background-color: var(--compra);
+                padding: 5px 9px;
+                border-radius: 50px;
+                color: white;
+            }
+
+            .agregar_carrito:hover{
+                background-color: var(--compra_hover);
+            }
+
+
+
+            .estado_ingresar_curso{
+                text-align: center;
+                display: block;
+                text-decoration: none;
+                color: white;
+                padding: 5px 8px;
+                font-size: 12px;
+                border-radius: 50px;
+                background-color: var(--color_boton_accion);
+
+                display: none;
+            }
+
+            .estado_ingresar_curso:hover{
+                background-color: var(--color_boton_accion_hover);
+            }
+
+            .estado_proximamente{
+                width: 100px;
+                font-size: 13px;
+                padding: 5px;
+                text-align: center;
+                color: white;
+                background-color: var(--color_fuente_titulos);
+
+                display: none;
+            }

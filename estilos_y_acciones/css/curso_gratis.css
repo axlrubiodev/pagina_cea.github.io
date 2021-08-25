@@ -1,0 +1,90 @@
+.cursos_gratis{
+    background-color: var(--color_fondo_bloque);
+    border-top: 1px solid var(--color_linea_bloque);
+    border-bottom: 1px solid var(--color_linea_bloque);
+    padding: 50px 0px;
+}
+
+.cursos_gratis .wrap_bloques .titulos_bloques{
+    margin-bottom: 15px;
+}
+
+.parrafo_bloques{
+    color: var(--color_parrafo_curso);
+    margin-bottom: 25px;
+}
+
+/* .lista_cursos_gratis{
+
+} */
+
+.lista_cursos_gratis{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.curso{
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+
+    display: grid;
+    grid-template-rows: 160px 1fr;
+}
+
+
+.enlace_curso{
+    display: flex;
+}
+
+.imagen_curso{
+    width: 100%;
+}
+
+
+.contenedor_info_curso{
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo_curso .enlace_texto_curso{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color_fuente_titulos);
+}
+
+.titulo_curso .enlace_texto_curso:hover{
+    text-decoration: underline;
+}
+
+.descripcion_curso{
+    font-size: 14px;
+    margin: 12px 0px 12px 0px;
+    color: var(--color_parrafo_curso);
+    cursor: default;
+
+    justify-self: flex-start;
+}
+
+.bloque_profesor{
+    display: flex;
+    align-items: center;
+}
+
+.bloque_profesor .imagen_profesor{
+    width: 25px;
+    border-radius: 50%;
+}
+
+.bloque_profesor .nombre_profesor{
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: 500;
+    color: var(--color_fuente_titulos);
+}

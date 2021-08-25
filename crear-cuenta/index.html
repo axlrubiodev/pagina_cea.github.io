@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Crear cuenta</title>
+
+        <link rel="icon" type="favicon/x-icon" href="../estilos_y_acciones/img/icon.png" />
+
+        <link rel="stylesheet" href="../estilos_y_acciones/css/style.css" />
+        <link rel="stylesheet" href="../estilos_y_acciones/css/inicia-sesion/inicia-sesion.css" />
+    </head>
+    <body>
+        <div class="conentedor_formulario_general">
+            <h1 class="titulo_bloque inicia_sesion_titulo">¡Unete a nosotros!</h1>
+
+            <section class="contenedor_formulario">
+                <form method="POST">
+                    <!-- Campo correo electronico -->
+                    <p class="contenedor_campo">
+                        <input type="text" name="user"placeholder="Correo electrónico" required />
+                        <span class="icono_campo">
+                            <img src="../estilos_y_acciones/icon/correo.svg" alt="mail" class="imagen_icono_campo" />
+                        </span>
+                    </p>
+                    <!-- Campo correo electronico -->
+
+                    <!-- Campo correo contraseña 1 -->
+                    <p class="contenedor_campo">
+                        <input type="password" name="password" placeholder="Contraseña" required />
+                        <span class="icono_campo">
+                            <img src="../estilos_y_acciones/icon/password.svg" alt="mail" class="imagen_icono_campo" />
+                        </span>
+                    </p>
+                    <!-- Campo correo contraseña 1 -->
+
+                    <!-- Campo contraseña 2 -->
+                    <p class="contenedor_campo">
+                        <input type="password" name="password" placeholder="Repite tu contraseña" required />
+                        <span class="icono_campo">
+                            <img src="../estilos_y_acciones/icon/password.svg" alt="mail" class="imagen_icono_campo" />
+                        </span>
+                    </p>
+                    <!-- Campo contraseña 2 -->
+                    <p><input type="submit" value="Crear cuenta"></p>
+                </form>
+
+                <p class="regresar_inicio">¿Ya tienes cuenta?
+                    <a href="../inicia-sesion/index.html" class="link_regresar_inicio">Inicia sesión</a>
+                </p>
+            </section>
+
+            <a href="../recuperar-password/index.html" class="olvidaste_contrasegna">¿Olvidaste tu contrasña?</a>
+        </div>
+    </body>
+</html>

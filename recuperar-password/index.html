@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Recuperar contraseña</title>
+
+        <link rel="icon" type="favicon/x-icon" href="../estilos_y_acciones/img/icon.png" />
+
+        <link rel="stylesheet" href="../estilos_y_acciones/css/style.css" />
+        <link rel="stylesheet" href="../estilos_y_acciones/css/inicia-sesion/inicia-sesion.css" />
+    </head>
+    <body>
+        <div class="conentedor_formulario_general">
+            <h1 class="titulo_bloque inicia_sesion_titulo">Recupera tu contraseña</h1>
+
+            <section class="contenedor_formulario">
+                <form method="POST">
+                    <p class="texto_recuperacion">
+                        Coloca aquí tu correo electrónico para buscar tu usuario y enviarte un correo de recuperación de contraseña.
+                    </p>
+                    <p class="contenedor_campo">
+                        <input type="text" name="user"placeholder="Correo electrónico" required />
+                        <span class="icono_campo">
+                            <img src="../estilos_y_acciones/icon/correo.svg" alt="mail" class="imagen_icono_campo" />
+                        </span>
+                    </p>
+                    <p><input type="submit" value="Recuperar"></p>
+                </form>
+            </section>
+
+            <a href="../inicia-sesion/index.html" class="olvidaste_contrasegna">Inicia Sesión</a>
+        </div>
+    </body>
+</html>

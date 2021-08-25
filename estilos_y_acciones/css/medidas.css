@@ -1,0 +1,279 @@
+@media screen and (max-width: 1350px){
+    .wrap_bloques{
+        width: 95%;
+    }
+    
+    .wrap{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    /*Inscribete*/
+    .wrap_inscribete{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    /*Nosotros*/
+    .ilustracion_nosotros{
+        width: 100%;
+    }
+
+    /*Cursos*/
+    .lista_cursos_gratis{
+        grid-gap: 20px;
+    }
+
+    .curso{
+        grid-template-rows: 128px 1fr;
+    }
+
+    .descripcion_curso{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .contenedor_de_barra_de_navegacion{
+        display: block;
+    }
+
+    .barra_de_navegacion{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenedor_de_botones_de_navegacion{
+        width: 100%;
+        position: absolute;
+        transform: scaleY(0);
+        background-color: var(--color_fuente_titulos);
+        padding: 0px 0px 0px 0px;
+    }
+
+    .contenedor_de_botones_de_navegacion .botonera_barra_de_navegacion{
+        display: block;
+    }
+
+    .contenedor_de_botones_de_navegacion .botonera_barra_de_navegacion .botones_navegacion .link_navegacion{
+        padding: 15px;
+        margin: 0px;
+        text-align: center;
+        color: white;
+    }
+
+    .contenedor_de_botones_de_navegacion .botonera_barra_de_navegacion .botones_navegacion .link_navegacion:hover{
+        background: rgba(0,0,0,0.2);
+    }
+
+    .contenedor_de_botones_de_navegacion .botonera_barra_de_navegacion .botones_navegacion .link_navegacion.botones_accion{
+        width: auto;
+        border-radius: 0px;
+        text-align: center;
+        background-color: var(--color_boton_accion);
+        color: white;
+    }
+
+    .boton_menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0px 20px 0px 0px;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    /*Cursos gratis*/
+    .lista_cursos_gratis{
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .curso{
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .descripcion_curso{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .banner_web{
+        height: auto;
+    }
+    
+    .banner_web .wrap{
+        width: 80%;
+        padding: 80px 0px;
+
+        grid-template-columns: 1fr;
+    }
+    
+    .imagen_banner{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+
+
+
+    .contenedor_servicios{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    /*Pie de pagina web*/
+    .informacion_extra{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 764px){
+    /*Nosotros*/
+    .nosotros{
+        padding: 40px 0px 20px 0px;
+    }
+
+    .imagen_nosotros {
+        justify-content: flex-start;
+    }
+
+    .ilustracion_nosotros{
+        width: 400px;
+    }
+
+    .contenedor_nosotros_informacion{
+        grid-gap: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .descripcion_informacion_nosotros {
+        font-size: 15px;
+    }
+
+
+
+    /*Cursos gratis*/
+    .lista_cursos_gratis{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .lista_cursos_gratis{
+        grid-template-columns: 1fr;
+    }
+
+    .curso {
+        grid-template-rows: 1fr 0fr;
+    }
+
+    .titulo_inscribete{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .descripcion_inscribete{
+        width: 90%;
+        margin: 15px auto;
+    }
+
+
+    /*Slider precios*/
+    .botonera{
+        display: block;
+        text-align: center;
+    }
+
+    .contenedor_botones{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contenedor_botones .boton {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .contenedor_botones .boton:first-child{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contenedor_botones .boton:last-child{
+        margin-bottom: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 600px){
+
+    /*Pie de pagina web*/
+    .informacion_extra{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+    .banner_web{
+        height: auto;
+    }
+    
+    .banner_web .wrap{
+        width: 95%;
+        padding: 80px 0px;
+
+        grid-gap: 80px;
+        grid-template-columns: 1fr;
+    }
+    
+    .imagen_banner{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .parrafo_banner{
+        width: 85%;
+        font-size: 16px;
+        padding: 50px 0px;
+    }
+
+
+
+    .contenedor_servicios{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+
+    /*Nosotros*/
+    .ilustracion_nosotros{
+        width: 350px;
+        margin: 20px 0px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 425px){
+    
+}

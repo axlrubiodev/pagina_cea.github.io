@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Inicia Sesión</title>
+
+        <link rel="icon" type="favicon/x-icon" href="../estilos_y_acciones/img/icon.png" />
+
+        <link rel="stylesheet" href="../estilos_y_acciones/css/style.css" />
+        <link rel="stylesheet" href="../estilos_y_acciones/css/inicia-sesion/inicia-sesion.css" />
+    </head>
+    <body>
+        <div class="conentedor_formulario_general">
+            <h1 class="titulo_bloque inicia_sesion_titulo">¡Inicia sesión!</h1>
+
+            <section class="contenedor_formulario">
+                <form method="POST">
+                    <p class="contenedor_campo">
+                        <input type="text" name="user"placeholder="Correo electrónico" required />
+                        <span class="icono_campo">
+                            <img src="../estilos_y_acciones/icon/correo.svg" alt="mail" class="imagen_icono_campo" />
+                        </span>
+                    </p>
+                    <p class="contenedor_campo">
+                        <input type="password" name="password" placeholder="Contraseña" required />
+                        <span class="icono_campo">
+                            <img src="../estilos_y_acciones/icon/password.svg" alt="mail" class="imagen_icono_campo" />
+                        </span>
+                    </p>
+                    <p><input type="submit" value="Ingresar"></p>
+                </form>
+
+                <a href="../crear-cuenta/index.html" class="crear_cuenta">Crear cuenta</a>
+            </section>
+
+            <a href="../recuperar-password/index.html" class="olvidaste_contrasegna">¿Olvidaste tu contrasña?</a>
+        </div>
+    </body>
+</html>

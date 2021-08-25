@@ -1,0 +1,158 @@
+@import url('fuente-poppins.css');
+
+
+:root{
+    --fuente_parrafos: 'Poppins', sans-serif;
+    --compra: #008047;
+    --compra_hover: #006839;
+    --color_boton_accion: #4D8EFB;
+    --color_boton_accion_hover: #377EfA;
+    --color_fuente_titulos: #3A4348;
+    --color_parrafo_curso: #697477;
+    --color_parrafo_banner: #8E9095;
+    --color_fondo_bloque: #F6F7FA;
+    --color_linea_bloque: #EAEAEA;
+    --color_suscribete: #AB8DE5;
+    --borde_suscribete: #936CDE;
+    --color_pie: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente_parrafos);
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+.wrap{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.wrap_bloques{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+
+body::-webkit-scrollbar{
+    width: 12px;
+    background: #F8FAFF;
+}
+
+body::-webkit-scrollbar-thumb{
+    border: 3px solid #F8FAFF;
+    background-color: #4D8EFB;
+    border-radius: 5px;
+}
+
+.titulos_bloques{
+    text-align: center;
+}
+
+
+.parrafo_bloques{
+    text-align: center;
+}
+
+
+
+/*----------------------------- Barra de navegacion -----------------------------*/
+
+
+.contenedor_de_barra_de_navegacion{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+
+    position: relative;
+    z-index: 800;
+}
+
+.barra_de_navegacion{
+    padding: 10px 0px 10px 20px;
+}
+
+.contenedor_logo{
+    text-decoration: none;
+}
+
+.icono_logo_principal{
+    width: 130px;
+}
+
+/* .contenedor_logo h1{
+    font-family: var(--fuente_logo);
+    color: var(--color_fuente_titulos);
+    font-size: 30px;
+    letter-spacing: 2px;
+} */
+
+.boton_menu{
+    display: none;
+
+    width: 80px;
+    height: 40px;
+    color: white;
+    background-color: var(--color_fuente_titulos);
+    border: none;
+    text-align: center;
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+}
+
+.activo{
+    transform: scaleY(1) !important;
+}
+
+
+.contenedor_de_botones_de_navegacion{
+    display: initial;
+    padding: 0px 20px 0px 0px;
+    transform-origin: top;
+}
+
+.contenedor_de_botones_de_navegacion .botonera_barra_de_navegacion{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor_de_botones_de_navegacion .botonera_barra_de_navegacion .botones_navegacion .link_navegacion{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 0px 8px;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: var(--color_fuente_titulos);
+}
+
+.contenedor_de_botones_de_navegacion .botonera_barra_de_navegacion .botones_navegacion .link_navegacion.botones_accion{
+    width: 100px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: var(--color_boton_accion);
+    color: white;
+}
+
+.contenedor_de_botones_de_navegacion .botonera_barra_de_navegacion .botones_navegacion .link_navegacion.botones_accion:hover{
+    background: var(--color_boton_accion_hover);
+}
+
+.contenedor_de_botones_de_navegacion .botonera_barra_de_navegacion .botones_navegacion:first-child .link_navegacion{
+    margin-left: 0;
+}
+
+.contenedor_de_botones_de_navegacion .botonera_barra_de_navegacion .botones_navegacion:last-child .link_navegacion{
+    margin-right: 0;
+}
+/*----------------------------- Barra de navegacion -----------------------------*/
